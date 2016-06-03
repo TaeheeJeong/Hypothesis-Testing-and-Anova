@@ -1,0 +1,67 @@
+#more than 2 Categorical explanatory variable vs Quantitative response variable
+# alcol consumption group (c)--> life expectance (q)
+
+# alcol consumption distribution
+mean       6.689412
+std        4.899617
+min        0.030000
+25%        2.625000
+50%        5.920000
+75%        9.925000
+max       23.010000
+
+#means for lifeexpectancy by alcohol consumption
+           lifeexpectancy
+alcgroup                 
+1=0%tile        66.829109
+2=25%tile       65.008886
+3=50%tile       70.795119
+4=75%tile       74.121886
+
+#standard deviations for lifeexpectancy by alcohol consumption
+           lifeexpectancy
+alcgroup                 
+1=0%tile         8.936402
+2=25%tile        9.987724
+3=50%tile        9.929988
+4=75%tile        8.032680
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         lifeexpectancy   R-squared:                       0.130
+Model:                            OLS   Adj. R-squared:                  0.115
+Method:                 Least Squares   F-statistic:                     8.595
+Date:                Fri, 03 Jun 2016   Prob (F-statistic):           2.39e-05
+Time:                        13:29:22   Log-Likelihood:                -639.15
+No. Observations:                 176   AIC:                             1286.
+Df Residuals:                     172   BIC:                             1299.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [95.0% Conf. Int.]
+--------------------------------------------------------------------------------------------
+Intercept                   66.8291      1.363     49.028      0.000        64.139    69.520
+C(alcgroup)[T.2=25%tile]    -1.8202      1.949     -0.934      0.352        -5.668     2.028
+C(alcgroup)[T.3=50%tile]     3.9660      1.973      2.010      0.046         0.071     7.861
+C(alcgroup)[T.4=75%tile]     7.2928      1.949      3.741      0.000         3.445    11.141
+==============================================================================
+Omnibus:                       16.298   Durbin-Watson:                   1.852
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               18.632
+Skew:                          -0.779   Prob(JB):                     9.00e-05
+Kurtosis:                       2.665   Cond. No.                         4.70
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+# Multiple Comparison of Means - Tukey HSD,FWER=0.05
+===================================================
+  group1    group2  meandiff  lower   upper  reject
+---------------------------------------------------
+ 1=0%tile 2=25%tile -1.8202  -6.8781  3.2376 False 
+ 1=0%tile 3=50%tile  3.966    -1.153  9.085  False 
+ 1=0%tile 4=75%tile  7.2928   2.2349 12.3506  True 
+2=25%tile 3=50%tile  5.7862   0.612  10.9605  True 
+2=25%tile 4=75%tile  9.113    3.9993 14.2267  True 
+3=50%tile 4=75%tile  3.3268  -1.8475  8.501  False 
