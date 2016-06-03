@@ -9,4 +9,8 @@ F value is 87.62 from the OLS table and p value is a very small as 2.62e-17, sim
 
 ## Model Interpretation for post hoc ANOVA results:
 
-ANOVA revealed that among daily, young adult smokers (my sample), number of cigarettes smoked per day (collapsed into 5 ordered categories, which is the categorical explanatory variable) and number of nicotine dependence symptoms (quantitative response variable) were significantly associated, F (4, 1308)=11.79, p=0001. Post hoc comparisons of mean number of nicotine dependence symptoms by pairs of cigarettes per day categories revealed that those individuals smoking more than 10 cigarettes per day (i.e. 11 to 15, 16 to 20 and >20) reported significantly more nicotine dependence symptoms compared to those smoking 10 or fewer cigarettes per day (i.e. 1 to 5 and 6 to 10). All other comparisons were statistically similar.
+ANOVA revealed that alcohol consumption per adult (liter) (collapsed into 4 quantile categories, which is the categorical explanatory variable) and  life expectancy at birth (years) (quantitative response variable) were significantly associated.
+
+F (4, 176) value is 8.595 from the OLS table and p value is a very small as 2.39e-05, simply <.0001.
+
+Post hoc comparisons of mean number of alcohol consumption per adult categories revealed that 25% quantitle (2.625~ 5.92 liters)  reported life expectation is 9 years shorter compared to 75% quantitle (9.925000~ 23.010 liters). 
