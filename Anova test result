@@ -1,3 +1,6 @@
+#2 Categorical explanatory variable vs Quantitative response variable
+# urban group (c)--> life expectance (q)
+
 means for lifeexpectancy by urban status
             lifeexpectancy
 urbangroup                
