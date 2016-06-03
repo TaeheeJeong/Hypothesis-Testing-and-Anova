@@ -1,0 +1,37 @@
+means for lifeexpectancy by urban status
+            lifeexpectancy
+urbangroup                
+rural            62.949263
+city             74.114179
+
+standard deviations for lifeexpectancy by urban status
+            lifeexpectancy
+urbangroup                
+rural             9.421459
+city              6.925377
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         lifeexpectancy   R-squared:                       0.320
+Model:                            OLS   Adj. R-squared:                  0.317
+Method:                 Least Squares   F-statistic:                     87.62
+Date:                Fri, 03 Jun 2016   Prob (F-statistic):           2.62e-17
+Time:                        12:46:03   Log-Likelihood:                -657.30
+No. Observations:                 188   AIC:                             1319.
+Df Residuals:                     186   BIC:                             1325.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [95.0% Conf. Int.]
+-----------------------------------------------------------------------------------------
+Intercept                62.9493      0.921     68.377      0.000        61.133    64.765
+C(urbangroup)[T.city]    11.1649      1.193      9.361      0.000         8.812    13.518
+==============================================================================
+Omnibus:                       12.773   Durbin-Watson:                   1.858
+Prob(Omnibus):                  0.002   Jarque-Bera (JB):               13.799
+Skew:                          -0.662   Prob(JB):                      0.00101
+Kurtosis:                       3.082   Cond. No.                         2.91
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
